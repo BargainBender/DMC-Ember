@@ -11,14 +11,13 @@
     </script>
     <script>
         function openSlideMenu() {
-            document.getElementById('menu').style.width = '250px';
-            document.getElementById('content1').style.marginLeft = '250px';
+            document.getElementById('menu').style.width = '150px';
         }
-
-        function closeSlideMenu() {
+         function closeSlideMenu() {
             document.getElementById('menu').style.width = 0;
             document.getElementById('content1').style.marginLeft = 0;
         }
+        
     </script>
 
 </head>
@@ -42,12 +41,15 @@
             <a href="#" class="close" onclick="closeSlideMenu()">
                 <i class="fas fa-times"></i>
             </a>
-
-            <a href="#">Log In</a>
+            <h1 id="ember1">Ember</h1>
+            <a href="#" id="log-in">Log In</a>
             <a href="#">Log out</a>
-            <a href="#" id="exit">Exit</a>
+            <a href="index.html" id="exit">Exit</a>
         </div>
-        <div id="wrapper">
+        
+    </div>
+
+    <div id="wrapper">
             <div id="content">
                 <div class="student-info"></div>
                 <div class="student-info"></div>
@@ -60,24 +62,6 @@
                 <div class="student-info"></div>
             </div>
         </div>
-    </div>
-
-
-
-
-    <!-- <div id="wrapper">
-        <div id="content">
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-            <div class="student-info"></div>
-        </div>
-    </div> -->
 </body>
 
 </html>

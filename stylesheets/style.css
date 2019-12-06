@@ -7,9 +7,10 @@
 }
 
 body {
-    height: 100vh;
-}
+    height: calc(100vh-60px);
 
+    overflow:hidden;
+}
 #nav {
     height: 60px;
     background: #0F2027;
@@ -23,14 +24,21 @@ body {
 }
 
 #wrapper {
-    /* height: calc(100vh-60px); */
+    height: 100vh; 
+    width: 100vw;
     position: relative;
+    z-index: 1;
     top: 60px;
+    cursor: pointer;
+    overflow: scroll;
 }
 
 #content {
-    margin-left: 25px;
-    margin-right: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
 }
 
 .navigation-icons {
@@ -47,8 +55,13 @@ body {
 
 #logo {
     background-image: url("../assets/images/favicon.png");
-    background-size: cover;
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px; 
 }
 
 h1 {
@@ -114,34 +127,38 @@ h1 {
     top: 0;
     left: 0;
     background-color: #0F2027;
-    opacity: .9;
     /*yung sa bg ng menu*/
     overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.7s;
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav1 a {
     /*yung buong nasa loob ng menu*/
     display: block;
     padding: 20px 30px;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: white;
     text-align: center;
+    font-family:Andale Mono, monospace;
+
 }
 
 .nav1 a:hover {
     color: #000;
     transition: 0.5s;
+    background-color: #9a6100;
 }
 
-.nav1 .close {
-    position: absolute;
-    top: 0;
-    right: 22px;
-    font-size: 50px;
-    padding: 0;
+#menu {
+    padding-top: 0;
+    z-index: 100;
+}
+
+.close {
+    height: 60px;
 }
 
 .slide a {
@@ -159,8 +176,16 @@ h1 {
 }
 
 #exit {
-    margin-top: 180%;
+    justify-self: self-end;
 }
 
+#ember1{
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+#log-in{
+    margin-top: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
