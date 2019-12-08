@@ -29,7 +29,6 @@ body {
     position: relative;
     z-index: 1;
     top: 60px;
-    cursor: pointer;
     overflow: scroll;
 }
 
@@ -141,9 +140,8 @@ h1 {
     font-size: 20px;
     text-decoration: none;
     color: white;
-    text-align: center;
+    text-align: left;
     font-family:Andale Mono, monospace;
-
 }
 
 .nav1 a:hover {
@@ -155,10 +153,6 @@ h1 {
 #menu {
     padding-top: 0;
     z-index: 100;
-}
-
-.close {
-    height: 60px;
 }
 
 .slide a {
@@ -189,3 +183,13 @@ h1 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.menu-items {
+    white-space: nowrap;
+}
+
+#close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
