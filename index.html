@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="./stylesheets/style.css">
-   <title>Ember</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <title>Ember</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+    </script>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '150px';
+        }
+         function closeSlideMenu() {
+            document.getElementById('menu').style.width = 0;
+        }
+        
+    </script>
+
 </head>
+
 <body>
-   <div id="nav">
-      <div id="hamburger-icon" class="navigation-icons"></div>
-      <div id="logo" class="navigation-icons"></div>
-      <h1>Ember</h1>
-      <div id="searchbar">
-         <input type="text" class=" textbox" placeholder="search...">
-         <button class="btn"><img class="search-icon"></img></button>
-       </div>
-   </div>
-   <div id="wrapper">
-      <div id="content">
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-         <div class="student-info"></div>
-      </div>
-   </div>
+    <div id="nav">
+        <div>
+            <span class="slide" id="content1">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i></a>
+            </span>
+        </div>
+        <div id="logo" class="navigation-icons"></div>
+        <h1>Ember</h1>
+        <div id="searchbar">
+            <input type="text" class=" textbox" placeholder="search...">
+            <button class="btn"><img class="search-icon"></img></button>
+        </div>
+
+        <div id="menu" class="nav1">
+            <a href="#" class="close" id="close-btn" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <h1 id="ember1">Ember</h1>
+            <a href="#" id="log-in" class="menu-items">Log In</a>
+            <a href="#" class="menu-items">Log out</a>
+            <a href="index.html" id="exit" class="menu-items">Exit</a>
+        </div>
+        
+    </div>
+
+    <div id="wrapper">
+            <div id="content">
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+                <div class="student-info"></div>
+            </div>
+        </div>
 </body>
+
 </html>
