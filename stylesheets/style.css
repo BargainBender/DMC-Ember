@@ -1,0 +1,9 @@
+.student-info {
+    cursor: pointer;
+    background: #f8f9fa;
+    transition: background 50ms;
+}
+
+.student-info:hover {
+    background: #feffd7;
+}

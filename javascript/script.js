@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    // Set default opened tab
     if (sessionStorage.getItem('openedTab') === null) {
         sessionStorage.setItem('openedTab','editor');
     }
@@ -9,4 +11,11 @@ $(document).ready(function() {
             alert(status);
         });
     });
+
+    $(document).on('click','.student-info', function(el) {
+        //let student_id = el.target.dataset.fullName;
+        console.log('works!')
+        
+    });
+
 });
