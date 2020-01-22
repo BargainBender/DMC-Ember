@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+
+  #layer-one {
+    position: relative;
+    z-index: 1;
+    grid-row: 1/1;
+    grid-column: 1/1;
+    filter: blur(2px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  #layer-two {
+    position: relative;
+    z-index: 2;
+    grid-row: 1/1;
+    grid-column: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+
+    .login-container {
+      grid-row: 4/8;
+      grid-column: 4/8;
+      position: relative;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+
+      .login-wrapper {
+        height: inherit;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+
+        input:nth-child(1) {
+          padding: 0.5rem;
+          margin: 2rem;
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          border-radius: 3px;
+          font-family: "Open Sans", sans-serif;
+        }
+
+        button {
+          padding: 0.8rem;
+          margin: 0.5rem 2rem 2rem 2rem;
+          font-size: 1rem;
+          border: none;
+          outline: none;
+          background: none;
+          cursor: pointer;
+          letter-spacing: 2px;
+          font-weight: 600;
+          font-family: "Open Sans", sans-serif;
+          background: #f12711; /* fallback for old browsers */
+          background: -webkit-linear-gradient(
+            to right,
+            #f5af19,
+            #f12711
+          ); /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(
+            to right,
+            #f5af19,
+            #f12711
+          ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+          &:hover {
+            outline: 1px solid black;
+          }
+        }
+      }
+    }
+  }
+}
+
+#video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  overflow: hidden;
+  height: 360px;
+}
